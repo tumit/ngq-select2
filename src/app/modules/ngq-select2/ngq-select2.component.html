@@ -1,0 +1,5 @@
+<select #select class="form-control">
+  <option value=''>Please select</option>
+  <option value='all'>Select all</option>
+  <option *ngFor="let d of _data" [value]="d['value']">{{ d['text'] }}</option>
+</select>
